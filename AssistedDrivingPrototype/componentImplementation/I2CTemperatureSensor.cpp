@@ -5,12 +5,12 @@
  *      Author: Fabio Limardo
  */
 
-#include "Arduino.h"
 #include "Wire.h"
-#include "I2CTemperatureSensor.h"
+#include "Arduino.h"
+#include "../componentDeclaration/I2CTemperatureSensor.h"
 
-I2CTemperatureSensor::I2CTemperatureSensor(int adress){
-	this->address = adress;
+I2CTemperatureSensor::I2CTemperatureSensor(int address){
+	this->address = address;
 }
 
 float I2CTemperatureSensor::getTemperature(){

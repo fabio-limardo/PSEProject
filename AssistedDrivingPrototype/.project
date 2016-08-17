@@ -32,11 +32,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Wire</name>
-			<type>2</type>
-			<location>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire</location>
-		</link>
-		<link>
 			<name>core/core</name>
 			<type>2</type>
 			<location>C:/Users/Fabio Limardo/Desktop/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.11/cores/arduino</location>
@@ -45,6 +40,11 @@
 			<name>core/variant</name>
 			<type>2</type>
 			<location>C:/Users/Fabio Limardo/Desktop/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.11/variants/standard</location>
+		</link>
+		<link>
+			<name>libraries/Wire</name>
+			<type>2</type>
+			<location>C:/Users/Fabio Limardo/Desktop/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.11/libraries/Wire</location>
 		</link>
 	</linkedResources>
 </projectDescription>

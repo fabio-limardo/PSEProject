@@ -10,7 +10,7 @@
 
 class Photodetector {
 public:
-	virtual int getLightIntesity() = 0;
+	virtual int getLightIntensity() = 0;
 };
 
 

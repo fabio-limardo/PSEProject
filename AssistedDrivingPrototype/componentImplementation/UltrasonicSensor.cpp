@@ -6,7 +6,7 @@
  */
 
 #include "Arduino.h"
-#include "UltrasonicSensor.h"
+#include "../componentDeclaration/UltrasonicSensor.h"
 
 UltrasonicSensor::UltrasonicSensor(int trigPin, int echoPin){
 	this->trigPin = trigPin;

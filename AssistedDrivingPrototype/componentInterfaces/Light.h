@@ -10,11 +10,9 @@
 
 class Light{
 public:
-	virtual void switchON()=0;
-	virtual void switchOFF()=0;
+	virtual void switchOn()=0;
+	virtual void switchOff()=0;
 };
-
-
 
 
 #endif /* LIGHT_H_ */

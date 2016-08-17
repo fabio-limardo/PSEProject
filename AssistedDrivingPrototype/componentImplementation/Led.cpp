@@ -6,7 +6,7 @@
  */
 
 #include "Arduino.h"
-#include "Led.h"
+#include "../componentDeclaration/Led.h"
 
 Led::Led(int pin){
 	this->pin = pin;

@@ -21,6 +21,8 @@
 								<option id="it.baeyens.arduino.compiler.cpp.sketch.option.incpath.60863928" name="Include Paths (-I)" superClass="it.baeyens.arduino.compiler.cpp.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/AssistedDrivingPrototype/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/AssistedDrivingPrototype/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/AssistedDrivingPrototype/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/AssistedDrivingPrototype/libraries/Wire/src}&quot;"/>
 								</option>
 								<inputType id="it.baeyens.arduino.compiler.cpp.sketch.input.1276708145" name="CPP source files" superClass="it.baeyens.arduino.compiler.cpp.sketch.input"/>
 							</tool>
@@ -28,6 +30,8 @@
 								<option id="it.baeyens.arduino.compiler.c.sketch.option.incpath.1570096422" name="Include Paths (-I)" superClass="it.baeyens.arduino.compiler.c.sketch.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/AssistedDrivingPrototype/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/AssistedDrivingPrototype/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/AssistedDrivingPrototype/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/AssistedDrivingPrototype/libraries/Wire/src}&quot;"/>
 								</option>
 								<inputType id="it.baeyens.arduino.compiler.c.sketch.input.722833888" name="C Source Files" superClass="it.baeyens.arduino.compiler.c.sketch.input"/>
 							</tool>

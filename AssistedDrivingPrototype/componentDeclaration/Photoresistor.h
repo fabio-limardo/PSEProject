@@ -8,7 +8,7 @@
 #ifndef COMPONENTSDECLARATION_PHOTORESISTOR_H_
 #define COMPONENTSDECLARATION_PHOTORESISTOR_H_
 
-#include "Photodetector.h"
+#include "../componentInterfaces/Photodetector.h"
 
 class Photoresistor: public Photodetector {
 public:

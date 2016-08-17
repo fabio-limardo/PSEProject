@@ -8,7 +8,7 @@
 #ifndef COMPONENTSDECLARATION_ULTRASONICSENSOR_H_
 #define COMPONENTSDECLARATION_ULTRASONICSENSOR_H_
 
-#include "DistanceSensor.h"
+#include "../componentInterfaces/DistanceSensor.h"
 
 class UltrasonicSensor: public DistanceSensor {
 public:

@@ -2,15 +2,15 @@
 //This is a automatic generated file
 //Please do not modify this file
 //If you touch this file your change will be overwritten during the next build
-//This file has been generated on 2016-08-17 00:56:48
+//This file has been generated on 2016-08-17 17:32:40
 
 #include "Arduino.h"
 #include "Arduino.h"
 #include "Wire.h"
-#include "I2CTemperatureSensor.h"
-#include "Led.h"
-#include "Photoresistor.h"
-#include "UltrasonicSensor.h"
+#include "componentDeclaration/I2CTemperatureSensor.h"
+#include "componentDeclaration/Led.h"
+#include "componentDeclaration/Photoresistor.h"
+#include "componentDeclaration/UltrasonicSensor.h"
 void setup() ;
 void loop() ;
 

@@ -6,7 +6,7 @@
  */
 
 #include "Arduino.h"
-#include "Photodetector.h"
+#include "../componentDeclaration/Photoresistor.h"
 
 Photoresistor::Photoresistor(int pin){
 	this->pin = pin;
@@ -14,5 +14,6 @@ Photoresistor::Photoresistor(int pin){
 
 int Photoresistor::getLightIntensity(){
 	 int lightIntensity = analogRead(pin);
+	 lightIntensity = map(lightIntensity, 0, 1023, 0, 255);
 	 return lightIntensity;
 }

@@ -8,7 +8,7 @@
 #ifndef COMPONENTSDECLARATION_I2CTEMPERATURESENSOR_H_
 #define COMPONENTSDECLARATION_I2CTEMPERATURESENSOR_H_
 
-#include "TemperatureSensor.h"
+#include "../componentInterfaces/TemperatureSensor.h"
 
 class I2CTemperatureSensor: public TemperatureSensor{
 public:
