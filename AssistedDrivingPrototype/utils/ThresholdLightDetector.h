@@ -8,7 +8,7 @@
 #ifndef TASKDECLARATION_THRESHOLDLIGHTDETECTOR_H_
 #define TASKDECLARATION_THRESHOLDLIGHTDETECTOR_H_
 
-#include "../common/Detector.h"
+#include "../utils/Detector.h"
 #include "../componentDeclaration/Photoresistor.h"
 
 

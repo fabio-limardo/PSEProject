@@ -4,3 +4,6 @@
 /sources.mk
 /subdir.mk
 /libraries/
+/common/
+/taskImplementation/
+/utils/

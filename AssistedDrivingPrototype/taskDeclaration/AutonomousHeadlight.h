@@ -9,7 +9,7 @@
 #define TASKDECLARATION_AUTONOMOUSHEADLIGHT_H_
 
 #include "../componentDeclaration/Led.h"
-#include "../taskDeclaration/ThresholdLightDetector.h"
+#include "../utils/ThresholdLightDetector.h"
 #include "../common/Task.h"
 
 class AutonomousHeadlight: public Task{
@@ -21,7 +21,7 @@ class AutonomousHeadlight: public Task{
 
 public:
 	AutonomousHeadlight(int ledPin, int lightSensorPin, int thresold);
-	void init();
+	void init(int period);
 	void tick();
 
 };

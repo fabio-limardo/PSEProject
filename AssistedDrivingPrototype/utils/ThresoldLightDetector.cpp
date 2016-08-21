@@ -5,7 +5,7 @@
  *      Author: Fabio Limardo
  */
 
-#include "../taskDeclaration/ThresholdLightDetector.h"
+#include "../utils/ThresholdLightDetector.h"
 #include "../componentDeclaration/Photoresistor.h"
 
 ThresoldLightDetector::ThresoldLightDetector(int lightSensorPin, int thresold){
