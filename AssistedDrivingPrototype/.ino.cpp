@@ -2,7 +2,7 @@
 //This is a automatic generated file
 //Please do not modify this file
 //If you touch this file your change will be overwritten during the next build
-//This file has been generated on 2016-08-22 01:22:56
+//This file has been generated on 2016-08-22 19:52:49
 
 #include "Arduino.h"
 #include "Arduino.h"
@@ -11,8 +11,12 @@
 #include "componentDeclaration/Led.h"
 #include "componentDeclaration/Photoresistor.h"
 #include "componentDeclaration/UltrasonicSensor.h"
-void setup() ;
-void loop() ;
+#include "common/Scheduler.h"
+#include "taskDeclaration/AutonomousHeadlight.h"
+#include "taskDeclaration/CheckDistance.h"
+#include "taskDeclaration/UpdateTemperature.h"
+void setup();
+void loop();
 
 #include "AssistedDrivingPrototype.ino"
 
