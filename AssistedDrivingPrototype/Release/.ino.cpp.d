@@ -23,15 +23,16 @@
  ../common/Scheduler.h ../common/../common/Task.h \
  ../common/../common/Timer.h ../taskDeclaration/AutonomousHeadlight.h \
  ../taskDeclaration/../componentDeclaration/Led.h \
- ../taskDeclaration/../utils/ThresholdLightDetector.h \
- ../taskDeclaration/../utils/../utils/Detector.h \
- ../taskDeclaration/../utils/../componentDeclaration/Photoresistor.h \
- ../taskDeclaration/../common/Task.h ../taskDeclaration/CheckDistance.h \
- ../taskDeclaration/../utils/SafetyDistance.h \
- ../taskDeclaration/../utils/../componentDeclaration/UltrasonicSensor.h \
+ ../taskDeclaration/../common/Task.h \
+ ../taskDeclaration/../Services/ThresholdLightDetector.h \
+ ../taskDeclaration/../Services/../componentDeclaration/Photoresistor.h \
+ ../taskDeclaration/../Services/../Services/Detector.h \
+ ../taskDeclaration/CheckDistance.h \
+ ../taskDeclaration/../Services/SafetyDistance.h \
+ ../taskDeclaration/../Services/../componentDeclaration/UltrasonicSensor.h \
  ../taskDeclaration/UpdateTemperature.h \
- ../taskDeclaration/../utils/Thermometer.h \
- ../taskDeclaration/../utils/../componentDeclaration/I2CTemperatureSensor.h \
+ ../taskDeclaration/../Services/Thermometer.h \
+ ../taskDeclaration/../Services/../componentDeclaration/I2CTemperatureSensor.h \
  ../AssistedDrivingPrototype.ino
 
 C:\Users\Fabio\ Limardo\Desktop\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\cores\arduino/Arduino.h:
@@ -86,24 +87,24 @@ C:\Users\Fabio\ Limardo\Desktop\eclipseArduino\arduinoPlugin\packages\arduino\ha
 
 ../taskDeclaration/../componentDeclaration/Led.h:
 
-../taskDeclaration/../utils/ThresholdLightDetector.h:
-
-../taskDeclaration/../utils/../utils/Detector.h:
-
-../taskDeclaration/../utils/../componentDeclaration/Photoresistor.h:
-
 ../taskDeclaration/../common/Task.h:
+
+../taskDeclaration/../Services/ThresholdLightDetector.h:
+
+../taskDeclaration/../Services/../componentDeclaration/Photoresistor.h:
+
+../taskDeclaration/../Services/../Services/Detector.h:
 
 ../taskDeclaration/CheckDistance.h:
 
-../taskDeclaration/../utils/SafetyDistance.h:
+../taskDeclaration/../Services/SafetyDistance.h:
 
-../taskDeclaration/../utils/../componentDeclaration/UltrasonicSensor.h:
+../taskDeclaration/../Services/../componentDeclaration/UltrasonicSensor.h:
 
 ../taskDeclaration/UpdateTemperature.h:
 
-../taskDeclaration/../utils/Thermometer.h:
+../taskDeclaration/../Services/Thermometer.h:
 
-../taskDeclaration/../utils/../componentDeclaration/I2CTemperatureSensor.h:
+../taskDeclaration/../Services/../componentDeclaration/I2CTemperatureSensor.h:
 
 ../AssistedDrivingPrototype.ino:

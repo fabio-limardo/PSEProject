@@ -20,7 +20,7 @@
 #define DIST_ECHO_FRONT 9
 #define DIST_TRIG_LEFT 8
 #define DIST_ECHO_LEFT 7
-#define LED_ON_THRESOLD 100
+#define LED_ON_THRESOLD 120
 
 Scheduler scheduler;
 
@@ -29,15 +29,15 @@ void setup(){
 	Wire.begin();
 	scheduler.init(50);
 
-	Task* checkDistanceFront = new CheckDistance(DIST_TRIG_FRONT,DIST_TRIG_FRONT,'f',100);
+	Task* checkDistanceFront = new CheckDistance(DIST_TRIG_FRONT,DIST_ECHO_FRONT,'f',100);
 	checkDistanceFront->init(50);
 	scheduler.addTask(checkDistanceFront);
 
-	Task* checkDistanceRight = new CheckDistance(DIST_TRIG_RIGHT,DIST_TRIG_RIGHT,'r',100);
+	Task* checkDistanceRight = new CheckDistance(DIST_TRIG_RIGHT,DIST_ECHO_RIGHT,'r',100);
 	checkDistanceRight->init(50);
 	scheduler.addTask(checkDistanceRight);
 
-	Task* checkDistanceLeft = new CheckDistance(DIST_TRIG_LEFT,DIST_TRIG_LEFT,'l',100);
+	Task* checkDistanceLeft = new CheckDistance(DIST_TRIG_LEFT,DIST_ECHO_LEFT,'l',100);
 	checkDistanceLeft->init(50);
 	scheduler.addTask(checkDistanceLeft);
 

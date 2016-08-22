@@ -8,8 +8,8 @@
 #ifndef TASKDECLARATION_THRESHOLDLIGHTDETECTOR_H_
 #define TASKDECLARATION_THRESHOLDLIGHTDETECTOR_H_
 
-#include "../utils/Detector.h"
 #include "../componentDeclaration/Photoresistor.h"
+#include "../Services/Detector.h"
 
 
 class ThresoldLightDetector: public Detector {

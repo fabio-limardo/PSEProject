@@ -9,8 +9,8 @@
 #define TASKDECLARATION_AUTONOMOUSHEADLIGHT_H_
 
 #include "../componentDeclaration/Led.h"
-#include "../utils/ThresholdLightDetector.h"
 #include "../common/Task.h"
+#include "../Services/ThresholdLightDetector.h"
 
 class AutonomousHeadlight: public Task{
 

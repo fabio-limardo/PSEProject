@@ -14,6 +14,8 @@ UltrasonicSensor::UltrasonicSensor(int trigPin, int echoPin){
 	pinMode(trigPin, OUTPUT);
 	pinMode(echoPin, INPUT);
 	temperature = 20;
+	Serial.println(trigPin);
+	Serial.println(echoPin);
 
 }
 
@@ -33,6 +35,7 @@ float UltrasonicSensor::getDistance(float temperature){
 	float tUS = pulseIn(echoPin, HIGH);
 	float t = tUS / 1000.0 / 1000.0 / 2; //fattore conversione e distanza percorsa due volte
 	float distance = t*speedOfSound;
+	Serial.println(distance);
 	return distance;
 }
 

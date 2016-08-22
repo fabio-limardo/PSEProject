@@ -5,8 +5,9 @@
  *      Author: Fabio Limardo
  */
 
-#include "../utils/ThresholdLightDetector.h"
 #include "../componentDeclaration/Photoresistor.h"
+#include "../Services/ThresholdLightDetector.h"
+#include "Arduino.h"
 
 ThresoldLightDetector::ThresoldLightDetector(int lightSensorPin, int thresold){
 	this->lightSensorPin = lightSensorPin;
@@ -15,7 +16,9 @@ ThresoldLightDetector::ThresoldLightDetector(int lightSensorPin, int thresold){
 }
 
 bool ThresoldLightDetector::detected(){
-	if(lightSensor->getLightIntensity() >= threshold)
+
+	Serial.println(lightSensor->getLightIntensity());
+	if(lightSensor->getLightIntensity() <= threshold)
 		return true;
 	else
 		return false;

@@ -7,7 +7,7 @@
 
 #include "../taskDeclaration/AutonomousHeadlight.h"
 #include "../componentDeclaration/Led.h"
-#include "../utils/ThresholdLightDetector.h"
+#include "../Services/ThresholdLightDetector.h"
 
 AutonomousHeadlight::AutonomousHeadlight(int ledPin, int lightSensorPin, int threshold){
 	this->ledPin = ledPin;
