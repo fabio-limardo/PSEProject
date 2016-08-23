@@ -8,6 +8,7 @@
 #include "common/Scheduler.h"
 #include "taskDeclaration/AutonomousHeadlight.h"
 #include "taskDeclaration/CheckDistance.h"
+#include "taskDeclaration/Test.h"
 #include "taskDeclaration/UpdateTemperature.h"
 
 
@@ -42,12 +43,17 @@ void setup(){
 	scheduler.addTask(checkDistanceLeft);
 
 	Task* autonomousHeadlight = new AutonomousHeadlight(LED_PIN,LIGHTSENSOR_PIN,LED_ON_THRESOLD);
-	autonomousHeadlight->init(500);
+	autonomousHeadlight->init(250);
 	scheduler.addTask(autonomousHeadlight);
 
+
+//	Task* test = new Test();
+//	test->init(1000);
+//	scheduler.addTask(test);
+
 	Task* updateTemperature = new UpdateTemperature(TEMPSENSOR_ADDRESS);
-	updateTemperature->init(1000);
-	scheduler.addTask(autonomousHeadlight);
+	updateTemperature->init(1500);
+	scheduler.addTask(updateTemperature);
 }
 
 void loop(){

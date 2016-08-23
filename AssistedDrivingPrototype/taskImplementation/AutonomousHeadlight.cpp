@@ -5,9 +5,12 @@
  *      Author: Fabio Limardo
  */
 
+#include "Arduino.h"
 #include "../taskDeclaration/AutonomousHeadlight.h"
 #include "../componentDeclaration/Led.h"
 #include "../Services/ThresholdLightDetector.h"
+
+long startTime = 0, endTime=0 , deltaTime = 0;
 
 AutonomousHeadlight::AutonomousHeadlight(int ledPin, int lightSensorPin, int threshold){
 	this->ledPin = ledPin;
@@ -23,7 +26,7 @@ void AutonomousHeadlight::init(int period){
 }
 
 void AutonomousHeadlight::tick(){
-
+	startTime = micros();
 	switch(state){
 	case OFF:
 		if(lightDetector->detected()){
@@ -39,5 +42,8 @@ void AutonomousHeadlight::tick(){
 		break;
 
 	}
+	endTime = micros();
+	deltaTime = endTime - startTime;
+	Serial.println (deltaTime);
 }
 

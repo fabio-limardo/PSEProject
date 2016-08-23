@@ -2,7 +2,7 @@
 //This is a automatic generated file
 //Please do not modify this file
 //If you touch this file your change will be overwritten during the next build
-//This file has been generated on 2016-08-23 11:49:27
+//This file has been generated on 2016-08-23 21:35:24
 
 #include "Arduino.h"
 #include "Arduino.h"
@@ -14,6 +14,7 @@
 #include "common/Scheduler.h"
 #include "taskDeclaration/AutonomousHeadlight.h"
 #include "taskDeclaration/CheckDistance.h"
+#include "taskDeclaration/Test.h"
 #include "taskDeclaration/UpdateTemperature.h"
 void setup();
 void loop();

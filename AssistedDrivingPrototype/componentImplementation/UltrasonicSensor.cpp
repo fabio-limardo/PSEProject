@@ -35,7 +35,7 @@ float UltrasonicSensor::getDistance(float temperature){
 	float tUS = pulseIn(echoPin, HIGH);
 	float t = tUS / 1000.0 / 1000.0 / 2; //fattore conversione e distanza percorsa due volte
 	float distance = t*speedOfSound;
-	Serial.println(distance);
+	//Serial.println(distance);
 	return distance;
 }
 

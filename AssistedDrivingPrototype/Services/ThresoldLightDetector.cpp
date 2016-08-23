@@ -17,7 +17,7 @@ ThresoldLightDetector::ThresoldLightDetector(int lightSensorPin, int thresold){
 
 bool ThresoldLightDetector::detected(){
 
-	Serial.println(lightSensor->getLightIntensity());
+	//Serial.println(lightSensor->getLightIntensity());
 	if(lightSensor->getLightIntensity() <= threshold)
 		return true;
 	else

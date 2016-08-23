@@ -30,7 +30,7 @@
  ../taskDeclaration/CheckDistance.h \
  ../taskDeclaration/../Services/SafetyDistance.h \
  ../taskDeclaration/../Services/../componentDeclaration/UltrasonicSensor.h \
- ../taskDeclaration/UpdateTemperature.h \
+ ../taskDeclaration/Test.h ../taskDeclaration/UpdateTemperature.h \
  ../taskDeclaration/../Services/Thermometer.h \
  ../taskDeclaration/../Services/../componentDeclaration/I2CTemperatureSensor.h \
  ../AssistedDrivingPrototype.ino
@@ -100,6 +100,8 @@ C:\Users\Fabio\ Limardo\Desktop\eclipseArduino\arduinoPlugin\packages\arduino\ha
 ../taskDeclaration/../Services/SafetyDistance.h:
 
 ../taskDeclaration/../Services/../componentDeclaration/UltrasonicSensor.h:
+
+../taskDeclaration/Test.h:
 
 ../taskDeclaration/UpdateTemperature.h:
 
