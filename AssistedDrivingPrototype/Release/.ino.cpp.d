@@ -20,8 +20,8 @@
  ../componentDeclaration/../componentInterfaces/Photodetector.h \
  ../componentDeclaration/UltrasonicSensor.h \
  ../componentDeclaration/../componentInterfaces/DistanceSensor.h \
- ../common/Scheduler.h ../common/../common/Task.h \
- ../common/../common/Timer.h ../taskDeclaration/AutonomousHeadlight.h \
+ ../common/Scheduler.h ../common/Timer.h ../common/Task.h \
+ ../taskDeclaration/AutonomousHeadlight.h \
  ../taskDeclaration/../componentDeclaration/Led.h \
  ../taskDeclaration/../common/Task.h \
  ../taskDeclaration/../Services/ThresholdLightDetector.h \
@@ -79,9 +79,9 @@ C:\Users\Fabio\ Limardo\Desktop\eclipseArduino\arduinoPlugin\packages\arduino\ha
 
 ../common/Scheduler.h:
 
-../common/../common/Task.h:
+../common/Timer.h:
 
-../common/../common/Timer.h:
+../common/Task.h:
 
 ../taskDeclaration/AutonomousHeadlight.h:
 
