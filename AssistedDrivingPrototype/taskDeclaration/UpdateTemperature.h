@@ -8,8 +8,8 @@
 #ifndef TASKDECLARATION_UPDATETEMPERATURE_H_
 #define TASKDECLARATION_UPDATETEMPERATURE_H_
 
-#include "../common/Task.h"
-#include "../Services/Thermometer.h"
+#include "../scheduler/Task.h"
+#include "../services/Thermometer.h"
 
 class UpdateTemperature: public Task{
 	int sensorPin;

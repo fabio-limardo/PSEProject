@@ -9,7 +9,7 @@
 #define TASKDECLARATION_THRESHOLDLIGHTDETECTOR_H_
 
 #include "../componentDeclaration/Photoresistor.h"
-#include "../Services/Detector.h"
+#include "Detector.h"
 
 
 class ThresoldLightDetector: public Detector {

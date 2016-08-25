@@ -20,6 +20,7 @@ float I2CTemperatureSensor::getTemperature(){
 	Wire.requestFrom(address, 1);
 	while (Wire.available() == 0);
 	float temperature = Wire.read();
+	Serial.println(temperature);
 	return temperature;
 }
 

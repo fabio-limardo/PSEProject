@@ -12,15 +12,12 @@
 long startTimeB, endTimeB, deltaTimeB;
 
 UpdateTemperature::UpdateTemperature(int sensorPin){
-	Serial.println("costruttore");
 	this->sensorPin = sensorPin;
 }
 
 void UpdateTemperature::init(int period){
-	Serial.println("init");
 	Task::init(period);
 	sensor = new Thermometer(sensorPin);
-	Serial.println("termmometro");
 
 }
 

@@ -8,7 +8,7 @@
 #ifndef TASKDECLARATION_TEST_H_
 #define TASKDECLARATION_TEST_H_
 
-#include "../common/Task.h"
+#include "../scheduler/Task.h"
 
 class Test: public Task{
 

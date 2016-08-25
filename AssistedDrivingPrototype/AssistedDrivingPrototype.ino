@@ -5,7 +5,7 @@
 #include "componentDeclaration/Photoresistor.h"
 #include "componentDeclaration/UltrasonicSensor.h"
 
-#include "common/Scheduler.h"
+#include "scheduler/Scheduler.h"
 #include "taskDeclaration/AutonomousHeadlight.h"
 #include "taskDeclaration/CheckDistance.h"
 #include "taskDeclaration/Test.h"
@@ -24,6 +24,8 @@
 #define LED_ON_THRESOLD 120
 
 Scheduler scheduler;
+Task* updateTemperature;
+unsigned long lastReading;
 
 void setup(){
 	Serial.begin(9600);
@@ -31,15 +33,15 @@ void setup(){
 	scheduler.init(50);
 
 	Task* checkDistanceFront = new CheckDistance(DIST_TRIG_FRONT,DIST_ECHO_FRONT,'f',100);
-	checkDistanceFront->init(50);
+	checkDistanceFront->init(100);
 	scheduler.addTask(checkDistanceFront);
 
 	Task* checkDistanceRight = new CheckDistance(DIST_TRIG_RIGHT,DIST_ECHO_RIGHT,'r',100);
-	checkDistanceRight->init(50);
+	checkDistanceRight->init(100);
 	scheduler.addTask(checkDistanceRight);
 
 	Task* checkDistanceLeft = new CheckDistance(DIST_TRIG_LEFT,DIST_ECHO_LEFT,'l',100);
-	checkDistanceLeft->init(50);
+	checkDistanceLeft->init(100);
 	scheduler.addTask(checkDistanceLeft);
 
 	Task* autonomousHeadlight = new AutonomousHeadlight(LED_PIN,LIGHTSENSOR_PIN,LED_ON_THRESOLD);
@@ -51,12 +53,22 @@ void setup(){
 //	test->init(1000);
 //	scheduler.addTask(test);
 
-	Task* updateTemperature = new UpdateTemperature(TEMPSENSOR_ADDRESS);
-	updateTemperature->init(1500);
-	scheduler.addTask(updateTemperature);
+	updateTemperature = new UpdateTemperature(TEMPSENSOR_ADDRESS);
+	updateTemperature->init(150);
+	//scheduler.addTask(updateTemperature);
 }
 
 void loop(){
+
 	scheduler.sleep();
+	  if (millis () - lastReading >= 500 )   // 200 Hz
+	    {
+		  lastReading = millis ();
+		  Serial.print("ciao");
+		  updateTemperature->tick();
+
+	    // Update x, y, and z with new values 2.5ms
+	    }
+
 }
 

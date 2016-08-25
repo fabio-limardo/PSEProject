@@ -5,7 +5,7 @@
  *      Author: Fabio Limardo
  */
 
-#include "../Services/Thermometer.h"
+#include "Thermometer.h"
 
 #include "../componentDeclaration/I2CTemperatureSensor.h"
 

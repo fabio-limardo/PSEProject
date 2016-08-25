@@ -1,10 +1,10 @@
+/Services/
+/common/
+/componentImplementation/
 /core/
+/libraries/
 /makefile
 /objects.mk
 /sources.mk
 /subdir.mk
-/libraries/
-/common/
 /taskImplementation/
-/utils/
-/Services/

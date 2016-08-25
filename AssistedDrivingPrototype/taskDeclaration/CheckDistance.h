@@ -8,8 +8,8 @@
 #ifndef TASKDECLARATION_CHECKDISTANCE_H_
 #define TASKDECLARATION_CHECKDISTANCE_H_
 
-#include "../common/Task.h"
-#include "../Services/SafetyDistance.h"
+#include "../scheduler/Task.h"
+#include "../services/SafetyDistance.h"
 
 class CheckDistance: public Task {
 	int trigPin,echoPin;

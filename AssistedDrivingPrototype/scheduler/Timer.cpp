@@ -1,10 +1,12 @@
-#include "Timer.h"
+#include "../scheduler/Timer.h"
+
 #include "Arduino.h"
 
 volatile bool timerFlag;
 Runnable* pRunnable;
 
 ISR(TIMER1_COMPA_vect){
+	//sei(); //aggiunta da me
   timerFlag = true;
   if (pRunnable != NULL){
     pRunnable->run();  

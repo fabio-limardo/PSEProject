@@ -6,8 +6,8 @@
  */
 
 #include "../componentDeclaration/Photoresistor.h"
-#include "../Services/ThresholdLightDetector.h"
 #include "Arduino.h"
+#include "ThresholdLightDetector.h"
 
 ThresoldLightDetector::ThresoldLightDetector(int lightSensorPin, int thresold){
 	this->lightSensorPin = lightSensorPin;

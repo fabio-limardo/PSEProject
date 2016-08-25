@@ -5,10 +5,11 @@
  *      Author: Fabio Limardo
  */
 
+#include "SafetyDistance.h"
+
 #include "Arduino.h"
-#include "../Services/SafetyDistance.h"
 #include "../componentDeclaration/UltrasonicSensor.h"
-#include "../Services/Thermometer.h"
+#include "Thermometer.h"
 
 SafetyDistance::SafetyDistance(int trigPin, int echoPin){
 	this->trigPin = trigPin;
