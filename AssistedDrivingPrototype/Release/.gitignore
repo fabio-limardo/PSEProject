@@ -8,3 +8,6 @@
 /sources.mk
 /subdir.mk
 /taskImplementation/
+/messagingService/
+/scheduler/
+/services/

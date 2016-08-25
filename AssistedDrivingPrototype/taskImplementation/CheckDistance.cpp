@@ -6,6 +6,8 @@
  */
 
 #include "Arduino.h"
+#include "string.h"
+#include "../messagingService/MsgService.h"
 #include "../taskDeclaration/CheckDistance.h"
 #include "../Services/SafetyDistance.h"
 
@@ -26,7 +28,13 @@ void CheckDistance::init(int period){
 
 
 void CheckDistance::tick(){
-	startTimeA = micros();
+	//startTimeA = micros();
+	if (MsgService.isMsgAvailable()) {
+	    Msg* msg = MsgService.receiveMsg();
+		temperature= atoi(msg->getContent().c_str());
+	    delete msg;
+	    Serial.println(temperature);
+	}
 	switch(state){
 		case SAFETY:
 			if(checker->isSafety(minDistance,temperature)){
@@ -53,10 +61,10 @@ void CheckDistance::tick(){
 			}
 			break;
 			}
-	endTimeA = micros();
-	deltaTimeA = endTimeA - startTimeA;
-	Serial.print("distance task time ");
-	Serial.println(deltaTimeA);
+//	endTimeA = micros();
+//	deltaTimeA = endTimeA - startTimeA;
+//	Serial.print("distance task time ");
+//	Serial.println(deltaTimeA);
 
 
 

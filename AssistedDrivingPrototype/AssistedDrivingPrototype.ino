@@ -6,6 +6,7 @@
 #include "componentDeclaration/UltrasonicSensor.h"
 
 #include "scheduler/Scheduler.h"
+#include "messagingService/MsgService.h"
 #include "taskDeclaration/AutonomousHeadlight.h"
 #include "taskDeclaration/CheckDistance.h"
 #include "taskDeclaration/Test.h"
@@ -30,6 +31,7 @@ unsigned long lastReading;
 void setup(){
 	Serial.begin(9600);
 	Wire.begin();
+	MsgService.init();
 	scheduler.init(50);
 
 	Task* checkDistanceFront = new CheckDistance(DIST_TRIG_FRONT,DIST_ECHO_FRONT,'f',100);
@@ -64,7 +66,6 @@ void loop(){
 	  if (millis () - lastReading >= 500 )   // 200 Hz
 	    {
 		  lastReading = millis ();
-		  Serial.print("ciao");
 		  updateTemperature->tick();
 
 	    // Update x, y, and z with new values 2.5ms

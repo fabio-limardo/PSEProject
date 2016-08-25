@@ -20,19 +20,20 @@
  ../componentDeclaration/../componentInterfaces/Photodetector.h \
  ../componentDeclaration/UltrasonicSensor.h \
  ../componentDeclaration/../componentInterfaces/DistanceSensor.h \
- ../common/Scheduler.h ../common/Timer.h ../common/Task.h \
+ ../scheduler/Scheduler.h ../scheduler/../scheduler/Task.h \
+ ../scheduler/../scheduler/Timer.h ../messagingService/MsgService.h \
  ../taskDeclaration/AutonomousHeadlight.h \
  ../taskDeclaration/../componentDeclaration/Led.h \
- ../taskDeclaration/../common/Task.h \
- ../taskDeclaration/../Services/ThresholdLightDetector.h \
- ../taskDeclaration/../Services/../componentDeclaration/Photoresistor.h \
- ../taskDeclaration/../Services/../Services/Detector.h \
+ ../taskDeclaration/../scheduler/Task.h \
+ ../taskDeclaration/../services/ThresholdLightDetector.h \
+ ../taskDeclaration/../services/../componentDeclaration/Photoresistor.h \
+ ../taskDeclaration/../services/Detector.h \
  ../taskDeclaration/CheckDistance.h \
- ../taskDeclaration/../Services/SafetyDistance.h \
- ../taskDeclaration/../Services/../componentDeclaration/UltrasonicSensor.h \
+ ../taskDeclaration/../services/SafetyDistance.h \
+ ../taskDeclaration/../services/../componentDeclaration/UltrasonicSensor.h \
  ../taskDeclaration/Test.h ../taskDeclaration/UpdateTemperature.h \
- ../taskDeclaration/../Services/Thermometer.h \
- ../taskDeclaration/../Services/../componentDeclaration/I2CTemperatureSensor.h \
+ ../taskDeclaration/../services/Thermometer.h \
+ ../taskDeclaration/../services/../componentDeclaration/I2CTemperatureSensor.h \
  ../AssistedDrivingPrototype.ino
 
 C:\Users\Fabio\ Limardo\Desktop\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino/Arduino.h:
@@ -77,36 +78,38 @@ C:\Users\Fabio\ Limardo\Desktop\eclipseArduino\arduinoPlugin\packages\arduino\ha
 
 ../componentDeclaration/../componentInterfaces/DistanceSensor.h:
 
-../common/Scheduler.h:
+../scheduler/Scheduler.h:
 
-../common/Timer.h:
+../scheduler/../scheduler/Task.h:
 
-../common/Task.h:
+../scheduler/../scheduler/Timer.h:
+
+../messagingService/MsgService.h:
 
 ../taskDeclaration/AutonomousHeadlight.h:
 
 ../taskDeclaration/../componentDeclaration/Led.h:
 
-../taskDeclaration/../common/Task.h:
+../taskDeclaration/../scheduler/Task.h:
 
-../taskDeclaration/../Services/ThresholdLightDetector.h:
+../taskDeclaration/../services/ThresholdLightDetector.h:
 
-../taskDeclaration/../Services/../componentDeclaration/Photoresistor.h:
+../taskDeclaration/../services/../componentDeclaration/Photoresistor.h:
 
-../taskDeclaration/../Services/../Services/Detector.h:
+../taskDeclaration/../services/Detector.h:
 
 ../taskDeclaration/CheckDistance.h:
 
-../taskDeclaration/../Services/SafetyDistance.h:
+../taskDeclaration/../services/SafetyDistance.h:
 
-../taskDeclaration/../Services/../componentDeclaration/UltrasonicSensor.h:
+../taskDeclaration/../services/../componentDeclaration/UltrasonicSensor.h:
 
 ../taskDeclaration/Test.h:
 
 ../taskDeclaration/UpdateTemperature.h:
 
-../taskDeclaration/../Services/Thermometer.h:
+../taskDeclaration/../services/Thermometer.h:
 
-../taskDeclaration/../Services/../componentDeclaration/I2CTemperatureSensor.h:
+../taskDeclaration/../services/../componentDeclaration/I2CTemperatureSensor.h:
 
 ../AssistedDrivingPrototype.ino:

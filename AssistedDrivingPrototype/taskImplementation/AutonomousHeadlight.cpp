@@ -6,6 +6,7 @@
  */
 
 #include "Arduino.h"
+#include "../messagingService/MsgService.h"
 #include "../taskDeclaration/AutonomousHeadlight.h"
 #include "../componentDeclaration/Led.h"
 #include "../Services/ThresholdLightDetector.h"
@@ -26,7 +27,8 @@ void AutonomousHeadlight::init(int period){
 }
 
 void AutonomousHeadlight::tick(){
-	startTime = micros();
+//	startTime = micros();
+
 	switch(state){
 	case OFF:
 		if(lightDetector->detected()){
@@ -42,8 +44,8 @@ void AutonomousHeadlight::tick(){
 		break;
 
 	}
-	endTime = micros();
-	deltaTime = endTime - startTime;
-	Serial.println (deltaTime);
+//	endTime = micros();
+//	deltaTime = endTime - startTime;
+//	Serial.println (deltaTime);
 }
 
